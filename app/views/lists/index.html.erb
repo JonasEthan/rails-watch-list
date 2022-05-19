@@ -1,9 +1,11 @@
 <h1 class="">Lists of Movies</h1>
-<% @lists.each do |list| %>
-  <div class="list-items p-2 mb-2 justify-content-center">
-    <h4><%= link_to list.name, list_path(list.id) %></h4>
-  </div>
+<div class="container" stylesheet="width: 100vw">
+  <% @lists.each do |list| %>
+    <div class="list-items p-2 mb-2 positon-center w-50">
+      <h4><%= link_to list.name, list_path(list.id) %></h4>
+    </div>
 <% end %>
+</div>
 <div>
   <%= link_to "Create List", new_list_path %>
 </div>

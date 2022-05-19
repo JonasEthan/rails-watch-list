@@ -1,7 +1,10 @@
 <h1><%= @list.name %></h1>
 <div>
   <% @list.bookmarks.each do |bookmark| %>
-    <p><%= bookmark.movie.title %></p>
+    <div class="bg-dark rounded">
+      <h5><%= bookmark.movie.title %></h5>
+      <p>Here will be a link</p>
+    </div>
   <% end %>
 </div>
 <%= link_to "Add a Movie", list_bookmarks_path(@list.id) %>
