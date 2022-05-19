@@ -1,1 +1,9 @@
 // Specific CSS for your home-page
+body {
+  background-color: black;
+  color: white;
+
+  .list-items {
+    box-shadow: 0 0 4px white;
+  }
+}
