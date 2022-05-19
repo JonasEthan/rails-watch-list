@@ -1,7 +1,7 @@
 <h1 class="">Lists of Movies</h1>
 <div class="container" stylesheet="width: 100vw">
   <% @lists.each do |list| %>
-    <div class="list-items p-2 mb-2 positon-center w-50">
+    <div class="list-items p-2 mb-2">
       <h4><%= link_to list.name, list_path(list.id) %></h4>
     </div>
 <% end %>
